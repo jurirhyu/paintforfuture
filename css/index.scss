@@ -1,0 +1,120 @@
+ // I was rotating an SVG shape within a larger SVG when I noticed that the shape was taking the center of the SVG canvas as the origin of the transformation rather than its own center. To fix this add transform-box: fill-box to the shape you're rotating.
+
+ .Header__shape {
+    animation-duration: 4s;
+    animation-timing-function: cubic-bezier(.18,1.17,.03,1.46);
+    animation-fill-mode: backwards;
+    transform-origin: center;
+    // this here is the good stuff
+    transform-box: fill-box;
+  }
+  
+  
+  // aaand the rest of the code
+  
+  body {
+    background: radial-gradient(#c2c2c2 8%, transparent 8%), white;
+    background-position: 0 0, 25px 25px;
+    background-size:25px 25px;
+    min-height: 100vh;
+  }
+
+
+  .Header {
+    position: relative;
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .Header__svg {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: -1;
+    will-change: transform;
+  }
+  .Header__title {
+    font-family: Avenir, Futura, 'Open Sans', 'Gill Sans', 'Helvetica Neue', Ariel, sans-serif;
+    font-weight: bold;
+    font-size: 6vw;
+    margin: 0;
+  }
+ 
+  
+  .bigSquare {
+    animation-name: bigSquare ;
+  
+  }
+  
+  @keyframes bigSquare {
+    from { transform: translateY(10%) rotate(-80deg) scale(0); }
+    to { transform: translateY(0) rotate(0deg) scale(1); }
+  }
+
+  .littleSquare {
+    animation: littleSquare 2s  infinite alternate;
+   }
+  @keyframes littleSquare {
+    from { transform: translate(226%, 183%) rotate(140deg) scale(0) ; }
+    to { transform: translate(0%, 0%) rotate(0deg) scale(1); }
+  }
+  .triangle {
+    animation: triangle 4s  infinite alternate;
+  }
+  @keyframes triangle {
+    from { transform: rotate(-140deg) scale(0) ; }
+    to { transform: rotate(0deg) scale(1); }
+  }
+  .hoop {
+    animation: hoop 2.5s  infinite alternate;
+  }
+  @keyframes hoop {
+    from { transform: translate(-160%, -33%) scale(0) ; }
+    to { transform: translate(0%, 0%) scale(1); }
+  }
+  .bigCircle {
+    animation-name: bigCircle;
+  }
+  @keyframes bigCircle {
+    from { transform: scale(0) translate(60%, 3%); }
+    to { transform: scale(1) translate(0%, 0%); }
+  }
+  .littleCircle {
+    animation: littleCircle 2s  infinite alternate;
+  }
+  @keyframes littleCircle {
+    from { transform: scale(0) }
+    to { transform: scale(1) }
+  }
+  
+  // some lovely sass fun to stagger the animation
+  
+  .subscription{  
+ 
+    font-family: Avenir, Futura, 'Open Sans', 'Gill Sans', 'Helvetica Neue', Ariel, sans-serif;
+    font-weight: bold;
+    font-size: 2vw;
+    margin: 0;
+    text-align: center;
+  }
+
+  
+.imgs{
+  width: 80%;
+  margin:0 auto;
+
+  padding:5%;
+text-align: center;
+
+  img{
+    width: 100%;
+  }
+  
+}
+ 
+
+
+// <!-- ========================================================= -->

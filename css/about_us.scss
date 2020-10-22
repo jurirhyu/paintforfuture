@@ -1,0 +1,167 @@
+  .who_we_are{
+      font-family: Avenir, Futura, 'Open Sans', 'Gill Sans', 'Helvetica Neue', Ariel, sans-serif;
+      width: 50%;
+      text-align: center;
+      margin: 0 auto;
+      font-size: 2rem;
+  }
+    .scroll_down{
+        padding-top: 3%;
+        text-align: center;
+        p{
+            font-family: Avenir, Futura, 'Open Sans', 'Gill Sans', 'Helvetica Neue', Ariel, sans-serif;
+            width: 50%;
+            text-align: center;
+            margin: 0 auto;
+            font-size: 2rem;
+            font-weight: bold;
+            
+        }
+        img{
+            width: 3%;
+            
+        }
+}
+
+  .for_example{
+    padding-top: 5%;
+    font-family: Avenir, Futura, 'Open Sans', 'Gill Sans', 'Helvetica Neue', Ariel, sans-serif;
+    font-weight: bold;
+    font-size: 4vw;
+    margin: 0;
+    text-align: center;
+   
+  }
+//   <!-- ==============diagram ver2========================== -->
+.wrapper{
+    padding-top:5%;
+    
+    text-align: center;
+    .diagram{
+        padding:3%;
+        margin: 0 auto;
+        width: 30%;
+        text-align: center;
+        .small_title{
+            font-family: Avenir, Futura, 'Open Sans', 'Gill Sans', 'Helvetica Neue', Ariel, sans-serif;
+            font-weight: bold;
+            font-size: 2vw;
+            width: 0%;
+
+            color: #000;
+            overflow: hidden; /* Ensures the content is not revealed until the animation */
+            border-right: .15em solid orange; /* The typwriter cursor */
+            white-space: nowrap; /* Keeps the content on a single line */
+            margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+            letter-spacing: .15em; /* Adjust as needed */
+            display: inline-block;
+            animation: 
+              typing 3s steps(9, end) forwards,
+              blink-caret .5s step-end infinite;
+        }
+        
+        /* The typing effect */
+        @keyframes typing {
+          from { width: 0 }
+          to { width: 50% }
+        }
+        
+        /* The typewriter cursor effect */
+        @keyframes blink-caret {
+          from, to { border-color: transparent }
+          50% { border-color: orange }
+        }
+            p{}
+        }
+    }
+
+    .arrowss{
+      width: 3%;
+    }
+// <!-- ========================================================= -->
+
+
+@media (max-width: 480px){
+
+  .who_we_are{
+    font-family: Avenir, Futura, 'Open Sans', 'Gill Sans', 'Helvetica Neue', Ariel, sans-serif;
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 1rem;
+}
+  .scroll_down{
+      padding-top: 3%;
+      text-align: center;
+      p{
+          font-family: Avenir, Futura, 'Open Sans', 'Gill Sans', 'Helvetica Neue', Ariel, sans-serif;
+          width: 80%;
+          text-align: center;
+          margin: 0 auto;
+          font-size: 1rem;
+          font-weight: bold;
+          
+      }
+      img{
+          width: 3%;
+          
+      }
+}
+
+.for_example{
+  padding-top: 5%;
+  font-family: Avenir, Futura, 'Open Sans', 'Gill Sans', 'Helvetica Neue', Ariel, sans-serif;
+  font-weight: bold;
+  font-size: 4vw;
+  margin: 0;
+  text-align: center;
+ 
+}
+//   <!-- ==============diagram ver2========================== -->
+.wrapper{
+  padding-top:5%;
+  
+  text-align: center;
+  .diagram{
+      padding:3%;
+      margin: 0 auto;
+      width: 80%;
+      text-align: center;
+      .small_title{
+          font-family: Avenir, Futura, 'Open Sans', 'Gill Sans', 'Helvetica Neue', Ariel, sans-serif;
+          font-weight: bold;
+          font-size: 2vw;
+          width: 0%;
+
+          color: #000;
+          overflow: hidden; /* Ensures the content is not revealed until the animation */
+          border-right: .15em solid orange; /* The typwriter cursor */
+          white-space: nowrap; /* Keeps the content on a single line */
+          margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+          letter-spacing: .15em; /* Adjust as needed */
+          display: inline-block;
+          animation: 
+            typing 3s steps(9, end) forwards,
+            blink-caret .5s step-end infinite;
+      }
+      
+      /* The typing effect */
+      @keyframes typing {
+        from { width: 0 }
+        to { width: 50% }
+      }
+      
+      /* The typewriter cursor effect */
+      @keyframes blink-caret {
+        from, to { border-color: transparent }
+        50% { border-color: orange }
+      }
+          p{}
+      }
+  }
+
+  .arrowss{
+    width: 3%;
+  }
+
+}

@@ -1,0 +1,59 @@
+// Select the element and store it in a variable.
+var el = document.getElementById('one');
+
+// Change the value of the class attribute.
+el.className = 'cool';
+
+
+
+/*li 클릭하면
+
+클릭이벤트 발생
+hasAttribute('class') - 조건문 활용
+
+1. li class속성이 존재하면 hot 클래스명을 넣고
+2. li class속성이 존배하지 않으면 cool 클래스를 넣어주세요.*/
+
+var li = document.querySelectorAll('li');
+
+for(var i=0; i<li.length;i++){
+    li[i].addEventListener('click',function(){
+        
+        /*if(this.hasAttribute('class')){
+            this.className = 'hot'; 
+        }else{
+            this.className = 'cool';
+        }*/
+        
+var a = this.className == 'hot' || !this.hasAttribute('class');
+
+    li에 클래스명이 hot과 같고
+    li 클래스 속성이 없다면
+        
+if(a){
+    this.className = 'cool';
+}else{
+    this.className = 'hot';
+}
+        
+        
+        
+        
+        
+        
+        
+    });
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

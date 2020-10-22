@@ -1,0 +1,315 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:700");
+.Header__shape {
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  -webkit-animation-timing-function: cubic-bezier(0.18, 1.17, 0.03, 1.46);
+          animation-timing-function: cubic-bezier(0.18, 1.17, 0.03, 1.46);
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  transform-box: fill-box;
+}
+
+body {
+  background: radial-gradient(#c2c2c2 8%, transparent 8%), white;
+  background-position: 0 0, 25px 25px;
+  background-size: 25px 25px;
+  min-height: 100vh;
+}
+
+.Header {
+  position: relative;
+  min-height: 60vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.Header__svg {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  z-index: -1;
+  will-change: transform;
+}
+
+.Header__title {
+  font-family: Avenir, Futura, 'Open Sans', 'Gill Sans', 'Helvetica Neue', Ariel, sans-serif;
+  font-weight: bold;
+  font-size: 6vw;
+  margin: 0;
+}
+
+.bigSquare {
+  -webkit-animation-name: bigSquare;
+          animation-name: bigSquare;
+}
+
+@-webkit-keyframes bigSquare {
+  from {
+    -webkit-transform: translateY(10%) rotate(-80deg) scale(0);
+            transform: translateY(10%) rotate(-80deg) scale(0);
+  }
+  to {
+    -webkit-transform: translateY(0) rotate(0deg) scale(1);
+            transform: translateY(0) rotate(0deg) scale(1);
+  }
+}
+
+@keyframes bigSquare {
+  from {
+    -webkit-transform: translateY(10%) rotate(-80deg) scale(0);
+            transform: translateY(10%) rotate(-80deg) scale(0);
+  }
+  to {
+    -webkit-transform: translateY(0) rotate(0deg) scale(1);
+            transform: translateY(0) rotate(0deg) scale(1);
+  }
+}
+
+.littleSquare {
+  -webkit-animation-name: littleSquare;
+          animation-name: littleSquare;
+}
+
+@-webkit-keyframes littleSquare {
+  from {
+    -webkit-transform: translate(226%, 183%) rotate(140deg) scale(0);
+            transform: translate(226%, 183%) rotate(140deg) scale(0);
+  }
+  to {
+    -webkit-transform: translate(0%, 0%) rotate(0deg) scale(1);
+            transform: translate(0%, 0%) rotate(0deg) scale(1);
+  }
+}
+
+@keyframes littleSquare {
+  from {
+    -webkit-transform: translate(226%, 183%) rotate(140deg) scale(0);
+            transform: translate(226%, 183%) rotate(140deg) scale(0);
+  }
+  to {
+    -webkit-transform: translate(0%, 0%) rotate(0deg) scale(1);
+            transform: translate(0%, 0%) rotate(0deg) scale(1);
+  }
+}
+
+.triangle {
+  -webkit-animation-name: triangle;
+          animation-name: triangle;
+}
+
+@-webkit-keyframes triangle {
+  from {
+    -webkit-transform: rotate(-140deg) scale(0);
+            transform: rotate(-140deg) scale(0);
+  }
+  to {
+    -webkit-transform: rotate(0deg) scale(1);
+            transform: rotate(0deg) scale(1);
+  }
+}
+
+@keyframes triangle {
+  from {
+    -webkit-transform: rotate(-140deg) scale(0);
+            transform: rotate(-140deg) scale(0);
+  }
+  to {
+    -webkit-transform: rotate(0deg) scale(1);
+            transform: rotate(0deg) scale(1);
+  }
+}
+
+.hoop {
+  -webkit-animation-name: hoop;
+          animation-name: hoop;
+}
+
+@-webkit-keyframes hoop {
+  from {
+    -webkit-transform: translate(-160%, -33%) scale(0);
+            transform: translate(-160%, -33%) scale(0);
+  }
+  to {
+    -webkit-transform: translate(0%, 0%) scale(1);
+            transform: translate(0%, 0%) scale(1);
+  }
+}
+
+@keyframes hoop {
+  from {
+    -webkit-transform: translate(-160%, -33%) scale(0);
+            transform: translate(-160%, -33%) scale(0);
+  }
+  to {
+    -webkit-transform: translate(0%, 0%) scale(1);
+            transform: translate(0%, 0%) scale(1);
+  }
+}
+
+.bigCircle {
+  -webkit-animation-name: bigCircle;
+          animation-name: bigCircle;
+}
+
+@-webkit-keyframes bigCircle {
+  from {
+    -webkit-transform: scale(0) translate(60%, 3%);
+            transform: scale(0) translate(60%, 3%);
+  }
+  to {
+    -webkit-transform: scale(1) translate(0%, 0%);
+            transform: scale(1) translate(0%, 0%);
+  }
+}
+
+@keyframes bigCircle {
+  from {
+    -webkit-transform: scale(0) translate(60%, 3%);
+            transform: scale(0) translate(60%, 3%);
+  }
+  to {
+    -webkit-transform: scale(1) translate(0%, 0%);
+            transform: scale(1) translate(0%, 0%);
+  }
+}
+
+.littleCircle {
+  -webkit-animation-name: littleCircle;
+          animation-name: littleCircle;
+}
+
+@-webkit-keyframes littleCircle {
+  from {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes littleCircle {
+  from {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+body {
+  margin: 0px;
+  font-family: 'Roboto';
+  text-align: center;
+}
+
+#container {
+  color: #999;
+  text-transform: uppercase;
+  font-size: 36px;
+  font-weight: bold;
+  padding-top: 200px;
+  width: 100%;
+  bottom: 45%;
+  display: block;
+  padding-bottom: 10%;
+}
+
+#flip {
+  height: 50px;
+  overflow: hidden;
+}
+
+#flip > div > div {
+  color: #fff;
+  padding: 4px 12px;
+  height: 48px;
+  margin-bottom: 45px;
+  display: inline-block;
+}
+
+#flip div:first-child {
+  -webkit-animation: show 5s linear infinite;
+          animation: show 5s linear infinite;
+}
+
+#flip div div {
+  background: #42c58a;
+}
+
+#flip div:first-child div {
+  background: #4ec7f3;
+}
+
+#flip div:last-child div {
+  background: #DC143C;
+}
+
+@-webkit-keyframes show {
+  0% {
+    margin-top: -270px;
+  }
+  5% {
+    margin-top: -180px;
+  }
+  33% {
+    margin-top: -180px;
+  }
+  38% {
+    margin-top: -90px;
+  }
+  66% {
+    margin-top: -90px;
+  }
+  71% {
+    margin-top: 0px;
+  }
+  99.99% {
+    margin-top: 0px;
+  }
+  100% {
+    margin-top: -270px;
+  }
+}
+
+@keyframes show {
+  0% {
+    margin-top: -270px;
+  }
+  5% {
+    margin-top: -180px;
+  }
+  33% {
+    margin-top: -180px;
+  }
+  38% {
+    margin-top: -90px;
+  }
+  66% {
+    margin-top: -90px;
+  }
+  71% {
+    margin-top: 0px;
+  }
+  99.99% {
+    margin-top: 0px;
+  }
+  100% {
+    margin-top: -270px;
+  }
+}
+/*# sourceMappingURL=join_us_bg.css.map */
