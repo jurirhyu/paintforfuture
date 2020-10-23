@@ -8,7 +8,6 @@ header .nevbar.active {
 }
 
 header .nevbar {
-  background-color: rgba(255, 255, 255, 0.522);
   position: fixed;
   width: 100%;
   display: -webkit-box;
@@ -31,7 +30,6 @@ header .nevbar .logo {
 
 header .nevbar .logo a {
   text-align: center;
-  font-size: 60px;
   color: #000;
   width: 10%;
 }
@@ -141,10 +139,8 @@ header .nevbar .menu p a {
   font-family: "Arial";
   text-transform: uppercase;
   font-weight: bold;
-  font-size: 26px;
   line-height: 0.75;
   padding: 20px 0;
-  font-size: 4rem;
   display: block;
   white-space: normal;
   color: white;
@@ -194,181 +190,4 @@ header .nevbar .menu p.active {
   display: -ms-flexbox;
   display: flex;
 }
-
-@media (max-width: 768px) {
-  header {
-    width: 100%;
-    overflow: hidden;
-  }
-  header .nevbar.active {
-    background: rgba(0, 0, 0, 0.2);
-  }
-  header .nevbar {
-    background-color: rgba(255, 255, 255, 0.522);
-    position: fixed;
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    padding-left: 10%;
-    z-index: 1;
-    height: 10%;
-    margin-bottom: 5%;
-  }
-  header .nevbar .logo {
-    display: block;
-    width: 50%;
-    text-align: left;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  header .nevbar .logo a {
-    text-align: center;
-    font-size: 60px;
-    color: #000;
-    width: 10%;
-  }
-  header .nevbar .logo a .logo-image {
-    width: 30%s;
-  }
-  header .nevbar .lang {
-    display: block;
-    padding-right: 1%;
-  }
-  header .nevbar .lang ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-  header .nevbar .lang ul li a {
-    font-size: 12px;
-  }
-  header .nevbar .menu {
-    width: 30px;
-    position: relative;
-  }
-  header .nevbar .menu .trigger-menu {
-    width: 100%;
-    -webkit-transition: 0.5s;
-    transition: 0.5s;
-    display: inline-block;
-    position: relative;
-    z-index: 100;
-  }
-  header .nevbar .menu .trigger-menu span {
-    display: block;
-    width: 100%;
-    -webkit-transition: 0.5s;
-    transition: 0.5s;
-    background-color: #747474;
-    height: 3px;
-    margin: 4px;
-  }
-  header .nevbar .menu .trigger-menu span :hover {
-    color: #ffffff;
-  }
-  header .nevbar .menu .trigger-menu span:nth-of-type(1) {
-    -webkit-transform: translateY(0px) rotate(0deg);
-            transform: translateY(0px) rotate(0deg);
-  }
-  header .nevbar .menu .trigger-menu span:nth-of-type(2) {
-    -webkit-transition: 0.5s;
-    transition: 0.5s;
-  }
-  header .nevbar .menu .trigger-menu span:nth-of-type(3) {
-    -webkit-transform: translateY(0px) rotate(0deg);
-            transform: translateY(0px) rotate(0deg);
-  }
-  header .nevbar .menu .trigger-menu.active span:nth-of-type(1) {
-    -webkit-transform: translateY(5px) rotate(405deg);
-            transform: translateY(5px) rotate(405deg);
-  }
-  header .nevbar .menu .trigger-menu.active span:nth-of-type(2) {
-    -webkit-transition: 0.5s;
-    transition: 0.5s;
-    display: none;
-  }
-  header .nevbar .menu .trigger-menu.active span:nth-of-type(3) {
-    -webkit-transform: translateY(-3px) rotate(-405deg);
-            transform: translateY(-3px) rotate(-405deg);
-  }
-  header .nevbar .menu p {
-    display: none;
-    text-align: center;
-    position: fixed;
-    right: 0;
-    top: 0;
-    z-index: 10;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(7, 159, 230, 0.672);
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    font-size: 26px;
-  }
-  header .nevbar .menu p a {
-    font-family: "Arial";
-    text-transform: uppercase;
-    font-weight: bold;
-    font-size: 26px;
-    line-height: 0.75;
-    padding: 20px 0;
-    font-size: 4rem;
-    display: block;
-    white-space: normal;
-    color: white;
-    text-align: center;
-    -webkit-transition: 0.5s;
-    transition: 0.5s;
-  }
-  header .nevbar .menu p a:nth-child(1):hover {
-    opacity: 10;
-    color: white;
-    text-shadow: 0 0 100px #ffffff;
-    font-style: italic;
-    -webkit-animation: flashText 0.5s ease-out alternate infinite;
-            animation: flashText 0.5s ease-out alternate infinite;
-  }
-  header .nevbar .menu p a:nth-child(2):hover {
-    opacity: 10;
-    color: white;
-    text-shadow: 0 0 100px #ffffff;
-    font-style: italic;
-    -webkit-animation: flashText 0.5s ease-out alternate infinite;
-            animation: flashText 0.5s ease-out alternate infinite;
-  }
-  header .nevbar .menu p a:nth-child(3):hover {
-    opacity: 10;
-    color: white;
-    text-shadow: 0 0 100px #ffffff;
-    font-style: italic;
-    -webkit-animation: flashText 0.5s ease-out alternate infinite;
-            animation: flashText 0.5s ease-out alternate infinite;
-  }
-  header .nevbar .menu p a:nth-child(4):hover {
-    opacity: 10;
-    color: white;
-    text-shadow: 0 0 100px #ffffff;
-    font-style: italic;
-    -webkit-animation: flashText 0.5s ease-out alternate infinite;
-            animation: flashText 0.5s ease-out alternate infinite;
-  }
-  header .nevbar .menu p.active {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-}
-/*# sourceMappingURL=headerfooter.css.map */
+/*# sourceMappingURL=headerFooter.css.map */
